@@ -1,0 +1,14 @@
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li{
+    background:#F063F2;
+    width: 150px;
+    margin: 0 15px 15px 0;
+    padding: 5px;
+    text-align: center;
+}
