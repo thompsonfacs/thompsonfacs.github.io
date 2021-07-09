@@ -1,4 +1,5 @@
-#h1 {
+.item-a {
+    grid-area: header;
     background-color:#05F2DB;
     padding: 20px;
     margin: 0;
@@ -6,7 +7,23 @@
     text-align: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-#h2 {
+.item-b {
+    grid-area: nav;
+}
+.item-c {
+    grid-area: image;
+    background-color:#F2F2F2;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    outline: none;
+    text-align: left;
+}
+.item-d {
+    grid-area: main;
     background-color:#F2F2F2;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -16,8 +33,42 @@
     margin-right: 10%;
     color: #585858;
     outline: none;
+    text-align: left;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.item-e {
+    grid-area: links;
+    background-color:#F2F2F2;
+    color: #585858;
+    outline: #05F2DB;
     text-align: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.item-f {
+    grid-area: footer;
+    background-color:#F2F2F2;
+    color: #585858;
+    outline: #05F2DB;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas: 
+        "header header header header header header header header header"
+        "header header header header header header header header header"
+        "nav nav nav nav nav nav nav nav nav"
+        ". . . . . . . . ."
+        ". image image image main main main main ."
+        ". image image image main main main main ."
+        ". image image image main main main main ."
+        ". image image image main main main main ."
+        ". . . links links links . . ."
+        ". . . . . . . . ."
+        "footer footer footer footer footer footer footer footer footer";
 }
 
 
