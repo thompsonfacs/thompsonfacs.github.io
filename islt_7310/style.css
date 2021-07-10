@@ -68,6 +68,7 @@
     outline: #05F2DB;
     text-align: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-small;
 }
 
 .first-child::first-letter {
@@ -88,9 +89,15 @@
     .item-c {
         width: 30%;
     } 
-    .item-d {
-        width: 70%;
-    } 
+    .item-d {width: 70%;} 
+    footer {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        font-size: x-small;
+    }
 }
 
 @media only screen and (max-width: 640px) {
@@ -99,7 +106,7 @@
         width: 100%
     }
     image {
-        position: relative;
+        position: relative; 
         width: 100%    
     }
    footer {
@@ -108,6 +115,7 @@
        text-align: center;
        padding: 0;
        margin: 0;
+       font-size: x-small;
     }
 
     @media only screen and (max-width: 350px) {
@@ -116,6 +124,10 @@
             width: 100%
         }
         image {
+            position: relative; 
+            width: 100%    
+        }
+        main {
             position: relative;
             width: 100%    
         }
@@ -125,4 +137,5 @@
            text-align: center;
            padding: 0;
            margin: 0;
+           font-size: xx-small;
        }
