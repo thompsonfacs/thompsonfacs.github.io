@@ -93,3 +93,39 @@ nav body{
     #hamitems { display: none; }
     #hamnav input:checked ~ #hamitems { display: block;}
      /*??*/
+     
+     /*
+    .nav > li a{
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+    }
+    
+    .nav:hover ul {
+        display: block;
+    }
+    .nav:hover #mobileHide {
+        display: none;
+    }
+
+    .nav li {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    .nav>ul li {
+        text-align: left;
+        float: left;
+    }
+    
+    .nav a {
+        text-decoration: none;
+        display: inline-block;
+        border-top: none;
+        border-bottom: none;
+        padding: 5px 0px 5px 0px;
+        width: 240px;
+        margin-bottom: 2px;
+    }
+   
+}
