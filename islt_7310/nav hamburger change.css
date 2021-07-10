@@ -1,3 +1,10 @@
+.active a: link {
+    background-color: white;
+}
+.item-b {
+    display:none;
+}
+
 nav body{
     margin: 0;
     padding: 0;
@@ -11,14 +18,11 @@ nav body{
     list-style-type: none;
     text-align:center;
     padding:1px 0 1px 0;
-    display: inline-flex, 100%
-    
 }
 .nav > li{
     display: inline-block;
     padding: 5px 20px 5px; 
     position: relative;
-    text-align: center;
 }
 .nav > li > a{
     text-decoration: none;
@@ -54,71 +58,40 @@ nav body{
 .nav > li > ul li a:hover{
     color: #05F2DB;
 }
-/*??*/
-#hamitems { 
-    display: inline-flex, 100%;
-    padding: 5px 20px 5px; 
-    position: relative;
-    text-align: center;
-    }
-#hamitems a {
-  flex-grow: 1;
-  flex-basis: 0;
-  color: white;
-  text-decoration: none;
-  text-align: left;
-  display: inline-flex, 100%;
-}
-#hamitems a:hover { color: #05F2DB; }
-/*??*/
-#hamburger {display: none;}
 
 @media only screen and (max-width: 640px) {
-    /*??*/
-    #hamitems a {
-        box-sizing: border-box;
-        display: block;
-        width: 100%;
-        border-top: 1px solid #333;
-      }
-    /*??*/
-    #hamburger {
+    header {
+        position: relative;
+        width: 100%
+    }
+    .item-b {
         display: inline-block;
         padding-left: 20px;
         width: 26px;
         float: left;
         font-size: 2em;
-        color: #F063F2;
     }
-     /*??*/
-    #hamitems { display: none; }
-    #hamnav input:checked ~ #hamitems { display: block; }
-     /*??*/
-    .nav > li a{
-        box-sizing: border-box;
-        display: block;
-        width: 100%;
+    .nav ul, nav:active ul {
+        display: none;
+        position: absolute;
+        padding: 20px 20px 20px 0px;
+        top: 20px;
     }
-    .nav ul {display: none; }
-    #hamburger input:checked ~ .nav > li {display: block}
-    
     .nav:hover ul {
         display: block;
     }
     .nav:hover #mobileHide {
         display: none;
     }
-
     .nav li {
         text-align: center;
         padding: 0;
         margin: 0;
     }
-    .nav>ul li {
+    ,nav>ul li {
         text-align: left;
         float: left;
     }
-    
     .nav a {
         text-decoration: none;
         display: inline-block;
@@ -128,5 +101,8 @@ nav body{
         width: 240px;
         margin-bottom: 2px;
     }
-   
+    .nav .lastMobile {border-bottom: 3px;}
+         nav ul li ul {
+             display: none;
+         }
 }

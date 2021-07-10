@@ -15,16 +15,15 @@
 .item-c {
     grid-area: image;
     background-color:#F2F2F2;
-    border-width: 10px;
-    border-color: #F2CF66;
+    outline: 10px;
+    outline-color: #F2CF66;
     padding-top: 1%;
     padding-bottom: 1%;
     padding-left: 2%;
     padding-right: 2%;
     margin-left: 10%;
     margin-right: 10%;
-    outline: none;
-    text-align: left;
+    text-align: center;
 }
 .item-d {
     grid-area: main;
@@ -66,17 +65,11 @@
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(12, 1fr);
     grid-template-areas: 
-        "header header header header header header header header header"
-        "header header header header header header header header header"
-        "nav nav nav nav nav nav nav nav nav"
-        ". . . . . . . . ."
-        ". image image image main main main main ."
-        ". image image image main main main main ."
-        ". image image image main main main main ."
-        ". image image image main main main main ."
-        ". . . links links links . . ."
-        ". . . . . . . . ."
-        "footer footer footer footer footer footer footer footer footer";
+        "header header"
+        "nav nav"
+        "main main"
+        "links links"
+        "footer footer";
 }
 
 
@@ -90,7 +83,7 @@
         width: 100%
     }
     .item-a {
-        width: 100%%;
+        width: 100%;
     } 
     .item-b {
         width: 100%;
@@ -100,20 +93,6 @@
     } 
     .item-d {
         width: 70%;
-    } 
-}
-@media screen and (max-width: 959px) {
-    .item-a {
-        width: 100%;
-    } 
-    .item-b {
-        width: 100%;
-    }    
-    .item-c {
-        width: 100%;
-    } 
-    .item-d {
-        width: 100%;
     } 
 }
 
@@ -128,8 +107,25 @@
     }
    footer {
        position: relative;
-       width: 100%
+       width: 100%;
        text-align: center;
        padding: 0;
        margin: 0;
     }
+
+    @media only screen and (max-width: 350px) {
+        header {
+            position: relative;
+            width: 100%
+        }
+        image {
+            position: relative;
+            width: 100%    
+        }
+       footer {
+           position: relative;
+           width: 100%;
+           text-align: center;
+           padding: 0;
+           margin: 0;
+       }
