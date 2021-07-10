@@ -92,15 +92,15 @@ nav body{
     }
      /*??*/
     #hamitems { display: none; }
-    #hamnav input:checked ~ #hamitems { display: block; }
+    #hamnav input:checked ~ #hamitems { display: block;}
      /*??*/
+     
+     /*
     .nav > li a{
         box-sizing: border-box;
         display: block;
         width: 100%;
     }
-    .nav ul {display: none; }
-    #hamburger input:checked ~ .nav > li {display: block}
     
     .nav:hover ul {
         display: block;
