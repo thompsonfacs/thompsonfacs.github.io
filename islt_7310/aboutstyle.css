@@ -66,8 +66,17 @@
     color: #585858;
     outline: #05F2DB;
     text-align: center;
-    font-family:'Archivo Narrow', sans-serif;;
+    font-family:'Archivo Narrow', sans-serif;
 }
+
+.links > li{
+        display: inline-block;
+        list-style: none;
+        padding: 5px 20px 5px; 
+        position: relative;
+        text-align: center;
+    }
+
 .footer {
     grid-area: footer;
     background-color:#7C7C7C;
