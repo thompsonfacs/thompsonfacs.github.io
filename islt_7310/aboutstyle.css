@@ -102,6 +102,18 @@
     font-size: x-small;
 }
 
+.icon{
+    width:20px;
+    height:20px;
+ }
+ .iconbig{
+   position:absolute;
+   width: 0px;
+}
+ .icon:hover + .iconbig{
+    width: 50px;
+ }
+
 .first-child::first-letter {
     font-weight: bold;
     font-size: 150%;

@@ -82,6 +82,18 @@
     font-size: 150%;
 }
 
+.icon{
+    width:20px;
+    height:20px;
+ }
+ .iconbig{
+   position:absolute;
+   width: 0px;
+}
+ .icon:hover + .iconbig{
+    width: 50px;
+ }
+
 @media screen and (max-width: 959px) {
     .container {
         width: 100%
