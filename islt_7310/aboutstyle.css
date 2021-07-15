@@ -63,13 +63,26 @@
 .links {
     grid-area: links;
     background-color:#F2F2F2;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 1%;
+    margin-bottom: 1%;
     color: #585858;
-    outline: #05F2DB;
+    outline-width: 10px;
+    outline-color: #05F2DB;
     text-align: center;
     font-family:'Archivo Narrow', sans-serif;
 }
 
-.links > li{
+.links > ul{
+        display: inline-block;
+        list-style: none;
+        padding: 5px 20px 5px; 
+        position: relative;
+        text-align: center;
+    }
+
+.links > ul > li{
         display: inline-block;
         list-style: none;
         padding: 5px 20px 5px; 
@@ -79,8 +92,10 @@
 
 .footer {
     grid-area: footer;
-    background-color:#7C7C7C;
-    color: white;
+    /* background-color:#7C7C7C; */
+    background-image: url(img/fimg.jpg);
+    background-size: cover;
+    color: #7C7C7C;
     outline: #05F2DB;
     text-align: center;
     font-family:'Archivo Narrow', sans-serif;;
