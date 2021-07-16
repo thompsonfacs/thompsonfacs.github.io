@@ -57,6 +57,19 @@
     text-align: left;
     font-family:'Archivo Narrow', sans-serif;;
 }
+.item-d > ul{
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    text-align: center;
+}
+.item-d > ul > li{
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    width: 33%;
+    text-align: center;
+}
 .item-e {
     grid-area: links;
     background-color:#F2F2F2;
