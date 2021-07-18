@@ -160,6 +160,7 @@
        margin: 0;
        font-size: x-small;
     }
+}
 
     @media only screen and (max-width: 350px) {
         header {
@@ -182,6 +183,7 @@
            margin: 0;
            font-size: xx-small;
        }
+    }
 
   @media print {
     header { 
@@ -194,9 +196,7 @@
         color: #000 !important;
       }
 
-    }
     nav, image, footer {
         display: none;
     }
-
   }
