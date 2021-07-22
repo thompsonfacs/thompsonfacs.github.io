@@ -13,15 +13,15 @@
 }
 .item-a {
     grid-area: header;
-    background-color: #05F2DB;
+    background-color: #1D7F91;
     border-width: 0;
     border-color: #F2CF66;
     padding: 2px;
     margin: 0;
     color:white;
     text-align: center;
-    font-family: 'Zen Loop', cursive;
-    font-size: xx-large;
+    font-family: 'Francois One', sans-serif;
+    font-size: x-large;
 }
 .item-b {
     grid-area: nav;
@@ -74,20 +74,19 @@
     grid-area: links;
     background-color:#F2F2F2;
     color: #585858;
-    outline: #05F2DB;
+    outline: #1D7F91;
     text-align: center;
     font-family:'Archivo Narrow', sans-serif;
 }
 .item-f {
     grid-area: footer;
-    /* background-color:#7C7C7C; */
-    background-image: url(img/fimg.jpg);
-    background-size: cover;
-    color: #7C7C7C;
-    outline: #05F2DB;
+    background-color:#d8d6d6;
+    color: black;
+    outline: #1D7F91;
     text-align: center;
     font-family:'Archivo Narrow', sans-serif;
-    font-size: x-small;
+    font-size: small;
+    margin-top: 2%;
 }
 
 .first-child::first-letter {
@@ -125,7 +124,7 @@ th, td {
     padding: 5px;
 }
 table, th, td {
-    border: 1px solid #05F2DB;
+    border: 1px solid #1D7F91;
     border-collapse: collapse;
     font-size: 16px;
 }
@@ -136,7 +135,7 @@ tr:nth-child(even) {
     background-color: #fff;
 }
 thead {
-    background-color: #05F2DB;
+    background-color: #1D7F91;
 }
 
 @media screen and (max-width: 959px) {

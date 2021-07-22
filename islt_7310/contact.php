@@ -1,17 +1,25 @@
 <!-- 
 *****************************************************************************
-Title: About Page
+Title: Contact Page
 Use: ISLT 7355
 Author: Jamie Thompson
-Developed: Jun 17, 2021
+Developed: Jun 21, 2021
 Last Edited: Jul 21, 2021
 Comments: This is a work in progress!
 ****************************************************************************** 
 -->
+<?php
+if($_POST["message"]) {
+mail("jmt6nn@umsystem.edu", "Portfolio%20Website%20Contact",
+$_POST["insert your message here"]. "From: an@email.address");
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-       <title>About Me</title>
+       <title>Contact Me</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -21,12 +29,10 @@ Comments: This is a work in progress!
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&family=Francois+One&display=swap" rel="stylesheet">
-
-        <link rel="shortcut icon" type="image/x-icon" href="img/favicon2.ico">
         
-        <link rel="stylesheet" href="aboutstylefont.css">
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon1.ico">
+        
+        <link rel="stylesheet" href="aboutstyle.css">
         <link rel="stylesheet" href="nav.css">
 </head>
 <body>
@@ -50,26 +56,38 @@ Comments: This is a work in progress!
    </nav>
     <main>
       <div class="image">
-        <img src="headshot.jpg" alt="Jamie Thompson" style="float:left; width:30%; height:60%;">
+        <img src="headshot.jpg" alt="Jamie Thompson" style="float:left; padding-left:10%; width:20%; height:25%;">
       </div>
       <div class="content">
-        <h3>Hello!</h3>
-        <p>My name is Jamie Thompson and I am a Family and Consumer Sciences teacher. 
-        I teach at Battle High School in Columbia, MO. I have been teaching for ten years and look forward 
-        to many more.  I love teaching practical skills that help students prepare for life beyond school. 
-        My favorite ways to teach are through hands-on learning and technology.</p>
-        <p>In addition to teaching, I am pursuing a graduate degree in Learning Technologies and Design. In 
-        the future, I hope to work as a Curriculum Director or Technology Specialist. I would love to use my 
-        passions to help other educators improve their instruction.</p>
-        <p>I earned my Bachelor of Science in Education from <em>Missouri State University</em> in 
-        Springfield, MO. I graduated in December 2010 with an emphasis in Family and Consumer Sciences. 
-        Currently, I am a graduate student at the <em>University of Missouri</em> in Columbia, MO. I am studying 
-        Learning Technologies and Design with an emphasis in Technology in Schools. I hope to complete my degree 
-        by May 2023.</p>
-        <blockquote><em>Do not go where the path may lead, go instead where there is no path and leave a trail.</em> - Ralph Waldo Emerson</blockquote>
-    </div>
-    
-      <div class="links">
+        <h3>Let's get in touch!</h3>
+        <form action="mailto:jmt6nn@umsystem.edu?Subject=Portfolio%20Website%20Contact" method="post" enctype="multipart/form-data" action="contact.php">
+            <div>
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" required autofocus><br>
+            </div>
+            <div>
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" required><br>
+            </div>
+            <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder= "optional"><br>
+            </div>
+            <div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" required><br>
+            </div>
+            <div>
+            <label for="message">Message:</label>
+            <textarea id="message" required>
+               
+            </textarea><br>
+            </div>
+            <input type="submit">
+        </form>
+
+        </div>
+        <div class="links">
         <ul>
           <li> <a href="resume.pdf"><img src="img/resume.png"  alt="Click for Resume"/></a>
           </li>
