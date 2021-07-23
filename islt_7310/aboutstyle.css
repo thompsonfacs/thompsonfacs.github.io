@@ -135,7 +135,6 @@ form{
     }
     input, textarea:focus{
         border: 2px solid ;
-    
     }
     #button {
         width:2em;
@@ -144,7 +143,38 @@ form{
         font-family: 'Archivo Narrow', sans-serif;
     }
     #button {margin-left: 9.5em;}
-}
+
+    table {
+        width: 70%; 
+        padding: auto;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 1%;
+        margin-bottom: 2%;
+        font-family:'Archivo Narrow', sans-serif;
+     }
+     caption {
+         text-decoration: bold;
+         font-size: 18px;
+     }
+     th, td {
+         text-align: center;
+         padding: 5px;
+     }
+     table, th, td {
+         border: 1px solid #1D7F91;
+         border-collapse: collapse;
+         font-size: 16px;
+     }
+     tr:nth-child(odd) :not(thead) {
+         background-color: #ddd;
+     }
+     tr:nth-child(even) {
+         background-color: #fff;
+     }
+     thead {
+         background-color: #1D7F91;
+     }
 
 @media screen and (max-width: 959px) {
     .container {
@@ -198,11 +228,11 @@ form{
             position: relative; 
             width: 100%    
         }
-       
-        main {
+       main {
             position: relative;
             width: 100%    
         }
+       
        footer {
            position: relative;
            width: 100%;
