@@ -108,7 +108,6 @@
 
 table {
    width: 70%; 
-   padding: auto;
    margin-left: 15%;
    margin-right: 15%;
    margin-top: 1%;
@@ -116,7 +115,6 @@ table {
    font-family:'Archivo Narrow', sans-serif;
 }
 caption {
-    text-decoration: bold;
     font-size: 18px;
 }
 th, td {

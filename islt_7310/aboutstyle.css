@@ -146,7 +146,6 @@ form{
 
     table {
         width: 70%; 
-        padding: auto;
         margin-left: 15%;
         margin-right: 15%;
         margin-top: 1%;
@@ -154,8 +153,7 @@ form{
         font-family:'Archivo Narrow', sans-serif;
      }
      caption {
-         text-decoration: bold;
-         font-size: 18px;
+        font-size: 18px;
      }
      th, td {
          text-align: center;
