@@ -22,8 +22,8 @@
     margin: 0;
     color:white;
     text-align: center;
-    font-family: 'Francois One', sans-serif;
-    font-size: x-large;
+    font-family: 'Acme', sans-serif;
+    font-size: xx-large;
     }
 .navigation {
     grid-area: nav;
